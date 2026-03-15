@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>French A2 — Consommation | S-A-S модель</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Blended learning module</p>
+      <h1>French A2 — Consommation</h1>
+      <p class="lead">
+        Сайт побудовано за трьохблоковою логікою: синхронний блок для первинної роботи на занятті, асинхронний блок для самостійного опрацювання та синхронний блок для подальшої аудиторної роботи.
+      </p>
+      <div class="hero-actions">
+        <a href="#block1" class="btn primary">Блок 1</a>
+        <a href="#block2" class="btn">Блок 2</a>
+        <a href="#block3" class="btn">Блок 3</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card sticky-score">
+      <div class="section-head">
+        <div>
+          <h2>Загальний прогрес</h2>
+          <p class="muted">Після кожної вправи натисни «Перевірити». Правильні відповіді з’являться одразу.</p>
+        </div>
+        <div class="scoreboard">
+          <div>Виконано: <span id="doneCount">0</span>/<span id="exerciseCount">0</span></div>
+          <div>Бали: <span id="totalScore">0</span>/<span id="maxScore">0</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="block1" class="card">
+      <div class="block-label sync">Блок 1 — синхронний</div>
+      <h2>Первинна робота на занятті</h2>
+      <p class="muted">Мета: первинне ознайомлення з лексикою, рецепція, аудіювання та кероване введення матеріалу під час заняття.</p>
+
+      <div class="lexicon-header">
+        <h3>Лексичний мінімум</h3><p class="muted">Натискай на слова й вирази, щоб прослухати їхню вимову та побачити переклад українською й англійською.</p>
+        <div class="hero-actions">
+          <button class="btn small speak-all" data-target="lexicon">Прослухати всю лексику</button>
+          <button class="btn small stop-audio">Зупинити</button>
+        </div>
+      </div>
+
+      
+<p class="muted translation-legend">Після натискання під словом з’являється переклад: UA + EN.</p>
+<div id="lexicon" class="lexicon-grid">
+  <div class="lex-card">
+    <h4>Ядро: іменники</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="un produit" data-ua="товар" data-en="product">un produit<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un article" data-ua="товар / річ / артикул" data-en="item / article">un article<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un prix" data-ua="ціна" data-en="price">un prix<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une réduction" data-ua="знижка" data-en="discount / reduction">une réduction<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une promotion" data-ua="акція / знижка" data-en="special offer / promotion">une promotion<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une marque" data-ua="бренд / марка" data-en="brand">une marque<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un magasin" data-ua="магазин" data-en="shop / store">un magasin<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un supermarché" data-ua="супермаркет" data-en="supermarket">un supermarché<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un client" data-ua="клієнт" data-en="customer / client">un client<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un vendeur" data-ua="продавець" data-en="salesperson / seller">un vendeur<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un achat" data-ua="покупка" data-en="purchase">un achat<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une vente" data-ua="продаж" data-en="sale / selling">une vente<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une facture" data-ua="рахунок / накладна" data-en="invoice / bill">une facture<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un ticket de caisse" data-ua="чек з каси" data-en="receipt">un ticket de caisse<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une commande" data-ua="замовлення" data-en="order">une commande<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="une livraison" data-ua="доставка" data-en="delivery">une livraison<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un service" data-ua="послуга / сервіс" data-en="service">un service<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+
+  <div class="lex-card">
+    <h4>Ядро: дієслова</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="acheter" data-ua="купувати" data-en="to buy">acheter<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="payer" data-ua="платити" data-en="to pay">payer<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="coûter" data-ua="коштувати" data-en="to cost">coûter<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="dépenser" data-ua="витрачати" data-en="to spend">dépenser<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="vendre" data-ua="продавати" data-en="to sell">vendre<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="commander" data-ua="замовляти" data-en="to order">commander<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="recevoir" data-ua="отримувати" data-en="to receive">recevoir<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="retourner un produit" data-ua="повернути товар" data-en="to return a product">retourner un produit<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="échanger" data-ua="обмінювати" data-en="to exchange">échanger<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="choisir" data-ua="обирати" data-en="to choose">choisir<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="comparer" data-ua="порівнювати" data-en="to compare">comparer<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="préférer" data-ua="надавати перевагу" data-en="to prefer">préférer<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="utiliser" data-ua="використовувати" data-en="to use">utiliser<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="consommer" data-ua="споживати" data-en="to consume">consommer<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+
+  <div class="lex-card">
+    <h4>Прикметники та вирази</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="cher" data-ua="дорогий" data-en="expensive">cher<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="bon marché" data-ua="недорогий / дешевий" data-en="cheap / inexpensive">bon marché<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="utile" data-ua="корисний" data-en="useful">utile<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="inutile" data-ua="некорисний / зайвий" data-en="useless / unnecessary">inutile<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="de bonne qualité" data-ua="хорошої якості" data-en="good quality">de bonne qualité<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="écologique" data-ua="екологічний" data-en="eco-friendly">écologique<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="durable" data-ua="довговічний / екологічно стійкий" data-en="durable / sustainable">durable<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="neuf" data-ua="новий" data-en="new">neuf<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="d’occasion" data-ua="уживаний" data-en="second-hand / used">d’occasion<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="disponible" data-ua="у наявності / доступний" data-en="available">disponible<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="en promotion" data-ua="по акції / зі знижкою" data-en="on sale / on promotion">en promotion<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+
+  <div class="lex-card">
+    <h4>Формульні одиниці</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="Je voudrais…" data-ua="я б хотів / хотіла…" data-en="I would like…">Je voudrais…<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Est-ce que vous avez… ?" data-ua="чи є у вас…?" data-en="do you have…?">Est-ce que vous avez… ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Ça coûte combien ?" data-ua="скільки це коштує?" data-en="how much does it cost?">Ça coûte combien ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Je prends ça." data-ua="я беру це" data-en="I'll take this">Je prends ça.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Je paie par carte." data-ua="я плачу карткою" data-en="I pay by card">Je paie par carte.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Je paie en espèces." data-ua="я плачу готівкою" data-en="I pay in cash">Je paie en espèces.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="C’est tout." data-ua="це все" data-en="that's all">C’est tout.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Quelle taille ?" data-ua="який розмір?" data-en="what size?">Quelle taille ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Quelle couleur ?" data-ua="який колір?" data-en="what colour / color?">Quelle couleur ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Avec ou sans… ?" data-ua="з чи без…?" data-en="with or without…?">Avec ou sans… ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="C’est disponible ?" data-ua="це є в наявності?" data-en="is it available?">C’est disponible ?<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="D’accord." data-ua="добре / гаразд" data-en="okay / all right">D’accord.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Parfait." data-ua="чудово" data-en="perfect">Parfait.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Désolé(e)." data-ua="вибачте / вибач" data-en="sorry">Désolé(e).<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Merci beaucoup." data-ua="дуже дякую" data-en="thank you very much">Merci beaucoup.<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+
+  <div class="lex-card">
+    <h4>Колокації</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="faire des achats" data-ua="робити покупки" data-en="to make purchases">faire des achats<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="faire les courses" data-ua="робити покупки / закуповуватися" data-en="to do the shopping / grocery shopping">faire les courses<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="acheter en ligne" data-ua="купувати онлайн" data-en="to buy online">acheter en ligne<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="payer en ligne" data-ua="платити онлайн" data-en="to pay online">payer en ligne<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="faire une commande" data-ua="робити замовлення" data-en="to place an order">faire une commande<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="recevoir une livraison" data-ua="отримувати доставку" data-en="to receive a delivery">recevoir une livraison<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="retourner un produit" data-ua="повернути товар" data-en="to return a product">retourner un produit<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="demander un remboursement" data-ua="попросити повернення грошей" data-en="to ask for a refund">demander un remboursement<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="faire une réduction" data-ua="зробити знижку" data-en="to give a discount">faire une réduction<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+
+  <div class="lex-card">
+    <h4>Проблеми та відповідальне споживання</h4>
+    <div class="chips speak-group">
+      <button class="chip-speak" data-text="un problème" data-ua="проблема" data-en="problem">un problème<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="cassé" data-ua="зламаний" data-en="broken">cassé<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="ça ne marche pas" data-ua="це не працює" data-en="it doesn't work">ça ne marche pas<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="défectueux" data-ua="дефектний" data-en="defective / faulty">défectueux<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="trop petit" data-ua="надто малий" data-en="too small">trop petit<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="trop grand" data-ua="надто великий" data-en="too big / too large">trop grand<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Je voudrais un remboursement." data-ua="я б хотів / хотіла повернення грошей" data-en="I would like a refund.">Je voudrais un remboursement.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="Je voudrais échanger." data-ua="я б хотів / хотіла обміняти" data-en="I would like to exchange.">Je voudrais échanger.<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="recycler" data-ua="переробляти" data-en="to recycle">recycler<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="réutiliser" data-ua="повторно використовувати" data-en="to reuse">réutiliser<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="réduire" data-ua="зменшувати" data-en="to reduce">réduire<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="gaspiller" data-ua="марнувати" data-en="to waste">gaspiller<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="l’environnement" data-ua="довкілля" data-en="the environment">l’environnement<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="les déchets" data-ua="відходи" data-en="waste">les déchets<span class="chip-translation" aria-hidden="true"></span></button>
+      <button class="chip-speak" data-text="un sac réutilisable" data-ua="багаторазова торба" data-en="reusable bag">un sac réutilisable<span class="chip-translation" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</div>
+</div>
+
+      <div class="exercise" data-points="5">
+        <h3>A1. Значення + прагматика</h3>
+        <div class="audio-row">
+          <button class="btn small play-dialogue" data-dialogue="a1">▶ Прослухати репліки</button>
+          <button class="btn small stop-audio">Зупинити</button>
+          <span class="muted">Текст реплік не показується: потрібно слухати.</span>
+        </div>
+        <div class="q"><label>1. cher =</label>
+          <select data-answer="дорогий"><option value="">Оберіть</option><option>дешевий</option><option>дорогий</option><option>новий</option></select>
+        </div>
+        <div class="q"><label>2. promotion =</label>
+          <select data-answer="знижка"><option value="">Оберіть</option><option>доставка</option><option>знижка</option><option>гарантія</option></select>
+        </div>
+        <div class="q"><label>3. rembourser =</label>
+          <select data-answer="повернути гроші"><option value="">Оберіть</option><option>купити</option><option>повернути гроші</option><option>оплатити</option></select>
+        </div>
+        <div class="q"><label>4. Функція репліки з <span class="lex" data-ua="повернення грошей" data-en="refund">remboursement</span>:</label>
+          <select data-answer="прохання"><option value="">Оберіть</option><option>наказ</option><option>прохання</option><option>скарга</option></select>
+        </div>
+        <div class="q"><label>5. Функція репліки зі словом cher:</label>
+          <select data-answer="скарга"><option value="">Оберіть</option><option>порада</option><option>скарга</option><option>прохання</option></select>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>A2. Типи лексичних одиниць</h3>
+        <div class="q"><label>1. un achat =</label><select data-answer="слово"><option value="">Оберіть</option><option>слово</option><option>колокація</option><option>формула</option><option>ідіома</option></select></div>
+        <div class="q"><label>2. <span class="lex" data-ua="робити покупки" data-en="do the shopping">faire des courses</span> =</label><select data-answer="колокація"><option value="">Оберіть</option><option>слово</option><option>колокація</option><option>формула</option><option>ідіома</option></select></div>
+        <div class="q"><label>3. ça coûte combien ? =</label><select data-answer="формула"><option value="">Оберіть</option><option>слово</option><option>колокація</option><option>формула</option><option>ідіома</option></select></div>
+        <div class="q"><label>4. tomber en panne =</label><select data-answer="ідіома"><option value="">Оберіть</option><option>слово</option><option>колокація</option><option>формула</option><option>ідіома</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>A3. Морфеми і словотвір</h3>
+        <div class="q">
+          <p>1. sur + consommation →</p>
+          <label><input type="radio" name="a3q1" value="wrong"> consommation</label>
+          <label><input type="radio" name="a3q1" value="correct"> surconsommation</label>
+          <label><input type="radio" name="a3q1" value="wrong"> déconsommation</label>
+        </div>
+        <div class="q">
+          <p>2. re + utiliser →</p>
+          <label><input type="radio" name="a3q2" value="wrong"> utiliser</label>
+          <label><input type="radio" name="a3q2" value="correct"> réutiliser</label>
+          <label><input type="radio" name="a3q2" value="wrong"> désutiliser</label>
+        </div>
+        <div class="q">
+          <p>3. sur- означає:</p>
+          <label><input type="radio" name="a3q3" value="wrong"> повторення</label>
+          <label><input type="radio" name="a3q3" value="wrong"> зменшення</label>
+          <label><input type="radio" name="a3q3" value="correct"> надмірність</label>
+        </div>
+        <div class="q">
+          <p>4. re- означає:</p>
+          <label><input type="radio" name="a3q4" value="correct"> повторну дію</label>
+          <label><input type="radio" name="a3q4" value="wrong"> заперечення</label>
+          <label><input type="radio" name="a3q4" value="wrong"> оцінку</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>A4. Cognates і faux amis</h3>
+        <div class="q"><label>1. location =</label><select data-answer="оренда"><option value="">Оберіть</option><option>місце</option><option>оренда</option></select></div>
+        <div class="q"><label>2. ticket de caisse / ticket (у контексті покупок) =</label><select data-answer="чек з каси"><option value="">Оберіть</option><option>квиток</option><option>чек з каси</option></select></div>
+        <div class="q"><label>3. sale =</label><select data-answer="брудний"><option value="">Оберіть</option><option>розпродаж</option><option>брудний</option></select></div>
+        <div class="q"><label>4. actuellement =</label><select data-answer="зараз, нині"><option value="">Оберіть</option><option>актуально</option><option>зараз, нині</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="3">
+        <h3>B1. Глобальне розуміння (аудіювання)</h3>
+        <div class="audio-row">
+          <button class="btn small play-dialogue" data-dialogue="b1">▶ Прослухати діалог</button>
+          <button class="btn small stop-audio">Зупинити</button>
+          <span class="muted">Лише аудіо, без тексту.</span>
+        </div>
+        <div class="q">
+          <p>Про що діалог?</p>
+          <label><input type="radio" name="b1q1" value="wrong"> подорож</label>
+          <label><input type="radio" name="b1q1" value="correct"> покупки</label>
+          <label><input type="radio" name="b1q1" value="wrong"> навчання</label>
+        </div>
+        <div class="q">
+          <p>Що робить мовець?</p>
+          <label><input type="radio" name="b1q2" value="wrong"> бронює готель</label>
+          <label><input type="radio" name="b1q2" value="correct"> порівнює ціни</label>
+          <label><input type="radio" name="b1q2" value="wrong"> шукає квиток</label>
+        </div>
+        <div class="q">
+          <p>Де планується покупка?</p>
+          <label><input type="radio" name="b1q3" value="wrong"> у школі</label>
+          <label><input type="radio" name="b1q3" value="correct"> онлайн</label>
+          <label><input type="radio" name="b1q3" value="wrong"> в аеропорту</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>B2. Розпізнавання лексики</h3>
+        <p class="muted">Прочитай мінідіалог і відміть слова, які в ньому є.</p>
+        <div class="mini-text">
+          Tu as vu cette promotion ? Oui, je compare les prix avant d’<span class="lex" data-ua="купувати" data-en="to buy">acheter</span>. Je vais commander en ligne.
+        </div>
+        <div class="q">
+          <label><input type="checkbox" data-answer="true"> promotion</label>
+          <label><input type="checkbox" data-answer="false"> <span class="lex" data-ua="повернення грошей" data-en="refund">remboursement</span></label>
+          <label><input type="checkbox" data-answer="true"> comparer</label>
+          <label><input type="checkbox" data-answer="false"> livraison</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>B3. Значення в контексті</h3>
+        <div class="q"><label>1. Le produit est en rupture de stock.</label><select data-answer="немає в наявності"><option value="">Оберіть</option><option>є знижка</option><option>немає в наявності</option><option>дорогий</option></select></div>
+        <div class="q"><label>2. Le produit est disponible.</label><select data-answer="є в наявності"><option value="">Оберіть</option><option>є в наявності</option><option>дефектний</option><option>зайвий</option></select></div>
+        <div class="q"><label>3. Cet article est défectueux.</label><select data-answer="має дефект"><option value="">Оберіть</option><option>дуже якісний</option><option>має дефект</option><option>вживаний</option></select></div>
+        <div class="q"><label>4. Ce produit est en promotion.</label><select data-answer="зі знижкою"><option value="">Оберіть</option><option>у кредит</option><option>зі знижкою</option><option>не працює</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="3">
+        <h3>B4. Функція висловлювання</h3>
+        <div class="q"><label>1. Vous pouvez me rembourser ?</label><select data-answer="прохання"><option value="">Оберіть</option><option>порада</option><option>прохання</option><option>опис</option></select></div>
+        <div class="q"><label>2. Ça ne marche pas.</label><select data-answer="скарга / повідомлення про проблему"><option value="">Оберіть</option><option>скарга / повідомлення про проблему</option><option>покупка</option><option>подяка</option></select></div>
+        <div class="q"><label>3. Je voudrais échanger.</label><select data-answer="ввічливе прохання"><option value="">Оберіть</option><option>наказ</option><option>ввічливе прохання</option><option>відмова</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      
+<div class="exercise" data-points="4">
+  <h3>B5. Вимова і написання</h3>
+  <div class="audio-row">
+    <button class="btn small play-dialogue" data-dialogue="b5_1">▶ Слово 1</button>
+    <button class="btn small play-dialogue" data-dialogue="b5_2">▶ Слово 2</button>
+    <button class="btn small play-dialogue" data-dialogue="b5_3">▶ Слово 3</button>
+    <button class="btn small play-dialogue" data-dialogue="b5_4">▶ Слово 4</button>
+    <button class="btn small stop-audio">Зупинити</button>
+  </div>
+  <div class="q"><label>1.</label><select data-answer="fidélité"><option value="">Оберіть</option><option>fidelité</option><option>fidélité</option></select></div>
+  <div class="q"><label>2.</label><select data-answer="livraison"><option value="">Оберіть</option><option>livraisson</option><option>livraison</option></select></div>
+  <div class="q"><label>3.</label><select data-answer="écologique"><option value="">Оберіть</option><option>écologique</option><option>ecologique</option></select></div>
+  <div class="q"><label>4.</label><select data-answer="remboursement"><option value="">Оберіть</option><option>remboursement</option><option>rembourcement</option></select></div>
+  <button class="check-btn">Перевірити</button><div class="feedback"></div>
+</div>
+
+
+      <div class="exercise" data-points="4">
+        <h3>Інтерференція: конструкції і пастки</h3>
+        <div class="q">
+          <p>1. Правильно:</p>
+          <label><input type="radio" name="int1" value="correct"> Je paie ce produit.</label>
+          <label><input type="radio" name="int1" value="wrong"> Je paie pour ce produit.</label>
+        </div>
+        <div class="q">
+          <p>2. Правильно:</p>
+          <label><input type="radio" name="int2" value="correct"> Je cherche un magasin.</label>
+          <label><input type="radio" name="int2" value="wrong"> Je cherche pour un magasin.</label>
+        </div>
+        <div class="q">
+          <p>3. Правильна колокація:</p>
+          <label><input type="radio" name="int3" value="wrong"> prendre des courses</label>
+          <label><input type="radio" name="int3" value="correct"> faire les courses</label>
+        </div>
+        <div class="q">
+          <p>4. demander у цьому модулі найчастіше означає:</p>
+          <label><input type="radio" name="int4" value="wrong"> вимагати силою</label>
+          <label><input type="radio" name="int4" value="correct"> просити / запитувати</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+    </section>
+
+    
+<section id="block2" class="card">
+      <div class="block-label async">Блок 2 — асинхронний</div>
+      <h2>Самостійне опрацювання між заняттями</h2>
+      <p class="muted">Мета: самостійне закріплення матеріалу, відпрацювання лексико-граматичних моделей, робота з інтерференційними труднощами та індивідуальна самоперевірка.</p>
+
+      <div class="exercise" data-points="4">
+        <h3>C1. Заповни пропуски</h3>
+        <div class="q"><label>1. payer ___ carte</label><input type="text" data-answer="par"></div>
+        <div class="q"><label>2. comparer ___ prix</label><input type="text" data-answer="les"></div>
+        <div class="q"><label>3. faire ___ commande</label><input type="text" data-answer="une"></div>
+        <div class="q"><label>4. demander ___ remboursement</label><input type="text" data-answer="un"></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="3">
+        <h3>C2. Збери речення</h3>
+        <p class="muted">Слова подано в довільному порядку. Запиши правильне речення повністю.</p>
+        <div class="q"><label>1. remboursement / un / veux / Je</label><input type="text" data-answer="Je veux un remboursement"></div>
+        <div class="q"><label>2. carte / par / paie / Je</label><input type="text" data-answer="Je paie par carte"></div>
+        <div class="q"><label>3. disponible / produit / Le / est</label><input type="text" data-answer="Le produit est disponible"></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>C4. Переклад без кальки</h3>
+        <div class="q"><label>1. to compare prices</label><input type="text" data-answer="comparer les prix"></div>
+        <div class="q"><label>2. to ask for a refund</label><input type="text" data-answer="demander un remboursement"></div>
+        <div class="q"><label>3. to do the shopping</label><input type="text" data-answer="faire les courses"></div>
+        <div class="q"><label>4. to pay online</label><input type="text" data-answer="payer en ligne"></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>D1. Знайди помилку</h3>
+        <div class="q"><label>1. Je cherche la location du magasin. (мається на увазі: я шукаю, де розташований магазин)</label><select data-answer="значення слова"><option value="">Оберіть</option><option>граматика</option><option>значення слова</option><option>вимова</option></select></div>
+        <div class="q"><label>2. Je paie pour ce produit.</label><select data-answer="калька з англійської"><option value="">Оберіть</option><option>калька з англійської</option><option>орфографія</option><option>неправильний час</option></select></div>
+        <div class="q"><label>3. Je cherche pour un magasin.</label><select data-answer="зайвий прийменник"><option value="">Оберіть</option><option>зайвий прийменник</option><option>неправильний рід</option><option>неправильна множина</option></select></div>
+        <div class="q"><label>4. prendre des courses</label><select data-answer="неправильна колокація"><option value="">Оберіть</option><option>неправильна колокація</option><option>неправильна вимова</option><option>помилка в числі</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>D2. Причина помилки</h3>
+        <div class="q"><label>1. Чому студент може сприймати location як “локація / місце”?</label><select data-answer="вплив англійської"><option value="">Оберіть</option><option>вплив англійської</option><option>вплив іспанської</option><option>помилка в правописі</option></select></div>
+        <div class="q"><label>2. Чому в реченні Je paie pour ce produit з’являється pour, хоча у французькій тут його не потрібно?</label><select data-answer="калька моделі з англійської"><option value="">Оберіть</option><option>калька моделі з англійської</option><option>неправильний рід</option><option>помилка в часі</option></select></div>
+        <div class="q"><label>3. Чому course плутають із courses ?</label><select data-answer="зовнішня схожість форм"><option value="">Оберіть</option><option>зовнішня схожість форм</option><option>помилка в артиклі</option><option>складна фонетика</option></select></div>
+        <div class="q"><label>4. Чому demander сприймають як demand?</label><select data-answer="faux ami"><option value="">Оберіть</option><option>faux ami</option><option>хибний суфікс</option><option>неправильний порядок слів</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>D3. Обери коректний вираз</h3>
+        <div class="q">
+          <p>1. Обери коректний вираз:</p>
+          <label><input type="radio" name="d3q1" value="wrong"> prendre des courses</label>
+          <label><input type="radio" name="d3q1" value="correct"> faire les courses</label>
+        </div>
+        <div class="q">
+          <p>2. Обери коректний вираз:</p>
+          <label><input type="radio" name="d3q2" value="correct"> demander quelque chose à quelqu’un</label>
+          <label><input type="radio" name="d3q2" value="wrong"> demander pour quelque chose</label>
+        </div>
+        <div class="q">
+          <p>3. Обери коректний вираз:</p>
+          <label><input type="radio" name="d3q3" value="correct"> payer quelque chose</label>
+          <label><input type="radio" name="d3q3" value="wrong"> payer pour quelque chose</label>
+        </div>
+        <div class="q">
+          <p>4. Обери коректний вираз:</p>
+          <label><input type="radio" name="d3q4" value="correct"> chercher quelque chose</label>
+          <label><input type="radio" name="d3q4" value="wrong"> chercher pour quelque chose</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="3">
+        <h3>D4. Стратегії запам’ятовування</h3>
+        <div class="q"><label>1. Як краще запам’ятати remboursement?</label><select data-answer="у контексті"><option value="">Оберіть</option><option>просто переклад</option><option>у контексті</option><option>не вчити</option></select></div>
+        <div class="q"><label>2. Як краще опрацювати faire les courses?</label><select data-answer="як колокацію"><option value="">Оберіть</option><option>як окреме слово</option><option>як колокацію</option><option>лише через переклад</option></select></div>
+        <div class="q"><label>3. Як краще уникати faux amis?</label><select data-answer="перевіряти контекст і значення"><option value="">Оберіть</option><option>ігнорувати схожість слів</option><option>перевіряти контекст і значення</option><option>запам’ятовувати лише англійське слово</option></select></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+    </section>
+
+
+    
+<section id="block3" class="card">
+      <div class="block-label sync">Блок 3 — синхронний</div>
+      <h2>Подальша робота на занятті</h2>
+      <p class="muted">Мета: керована продукція, відпрацювання ввічливих і комунікативно доречних реплік, а також рольова взаємодія в парах і групах.</p>
+
+      <div class="exercise" data-points="4">
+        <h3>C3. Обери правильний варіант</h3>
+        <div class="q">
+          <p>1. Ти хочеш ввічливо попросити повернення грошей:</p>
+          <label><input type="radio" name="c3q1" value="wrong"> Je veux remboursement.</label>
+          <label><input type="radio" name="c3q1" value="correct"> Je voudrais un remboursement.</label>
+        </div>
+        <div class="q">
+          <p>2. Ти питаєш, чи є інший розмір:</p>
+          <label><input type="radio" name="c3q2" value="correct"> Est-ce que vous avez une autre taille ?</label>
+          <label><input type="radio" name="c3q2" value="wrong"> Vous avez autre taille ?</label>
+        </div>
+        <div class="q">
+          <p>3. Ти хочеш сказати, що товар не працює:</p>
+          <label><input type="radio" name="c3q3" value="correct"> Ça ne fonctionne pas.</label>
+          <label><input type="radio" name="c3q3" value="wrong"> Ça ne marche pas le produit.</label>
+        </div>
+        <div class="q">
+          <p>4. Ти хочеш обміняти товар:</p>
+          <label><input type="radio" name="c3q4" value="correct"> Je voudrais échanger cet article.</label>
+          <label><input type="radio" name="c3q4" value="wrong"> Je voudrais changer pour article.</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="3">
+        <h3>C5. Формальний стиль</h3>
+        <div class="q">
+          <p>1. Обери ввічливу форму:</p>
+          <label><input type="radio" name="c5q1" value="wrong"> Tu me rembourses ?</label>
+          <label><input type="radio" name="c5q1" value="correct"> Pourriez-vous me rembourser ?</label>
+        </div>
+        <div class="q">
+          <p>2. Обери ввічливу форму:</p>
+          <label><input type="radio" name="c5q2" value="correct"> Je voudrais échanger cet article, s’il vous plaît.</label>
+          <label><input type="radio" name="c5q2" value="wrong"> Échangez ça.</label>
+        </div>
+        <div class="q">
+          <p>3. Обери ввічливу форму:</p>
+          <label><input type="radio" name="c5q3" value="correct"> Est-ce que vous avez une autre taille ?</label>
+          <label><input type="radio" name="c5q3" value="wrong"> Donnez une autre taille.</label>
+        </div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise" data-points="4">
+        <h3>C6. Мініпродукція</h3>
+        <p class="muted">У дужках є підказка щодо ситуації або слова, яке очікується.</p>
+        <div class="q"><label>1. Je voudrais __________________ (повернення грошей)</label><input type="text" data-answer="un remboursement"></div>
+        <div class="q"><label>2. Il y a __________________ (проблема з товаром)</label><input type="text" data-answer="un problème"></div>
+        <div class="q"><label>3. On peut __________________ les déchets. (екологічна дія)</label><input type="text" data-answer="réduire"></div>
+        <div class="q"><label>4. J’utilise __________________ (екологічна річ для покупок)</label><input type="text" data-answer="un sac réutilisable"></div>
+        <button class="check-btn">Перевірити</button><div class="feedback"></div>
+      </div>
+
+      <div class="exercise teacher-block" data-points="0">
+        <h3>Рольова вправа для заняття</h3>
+        <p class="muted">
+          Цей блок не оцінюється автоматично. Його використовують у парах на занятті.
+          Ситуації: 1) купівля товару; 2) повернення; 3) скарга на дефект; 4) відповідальне споживання.
+        </p>
+        <ul>
+          <li>Обов’язково використати: <strong>Je voudrais…</strong>, <strong>Ça coûte combien ?</strong>, <strong>Je voudrais un remboursement.</strong></li>
+          <li>Додати щонайменше 2 колокації: <strong>faire les courses</strong>, <strong>demander un remboursement</strong>, <strong>payer en ligne</strong>, <strong>retourner un produit</strong>.</li>
+          <li>У фіналі сказати 1 фразу про відповідальне споживання: <strong>Il faut réduire les déchets.</strong></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+<div id="translation-box" style="position:fixed;bottom:20px;right:20px;background:#fff;padding:10px;border:1px solid #ccc;display:none;"></div></body>
+</html>
